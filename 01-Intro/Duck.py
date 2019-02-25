@@ -2,11 +2,13 @@ from abc import ABC, abstractmethod
 
 
 class Duck(ABC):
-    def __init__(self):
-        this.flyBehavior = FlyBehavior()
-        this.quackBehavior = QuackBehavior()
+    flyBehavior = None
+    quackBehavior = None
 
 
+### Behaviors ###
+
+# Flying #
 class FlyBehavior(ABC):
     def fly(self):
         pass
@@ -22,6 +24,7 @@ class FlyNoWay(FlyBehavior):
         print("I can't fly")
 
 
+# Quacking #
 class QuackBehavior(ABC):
     def quack(self):
         pass
