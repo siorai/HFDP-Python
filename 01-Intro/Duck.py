@@ -1,5 +1,6 @@
 from abc import ABC, abstractmethod
 
+# Duck Class
 
 class Duck(ABC):
     flyBehavior = None
